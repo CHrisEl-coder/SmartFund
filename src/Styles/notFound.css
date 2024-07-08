@@ -1,0 +1,20 @@
+.notfound {
+    height: 100vh;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.content span {
+   font-family: monospace;
+   font-size: 14px;
+   font-weight: 700;
+}

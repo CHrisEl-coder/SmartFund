@@ -1,0 +1,124 @@
+
+/* Media Query Start */
+
+
+@media  screen and (max-width: 600px) {
+
+
+    header {
+        flex-direction: column;
+       
+        
+    }
+
+    header nav {
+        margin-top: -60px;
+        width: 100%;
+     
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+
+        
+        }
+
+    header nav ul li {
+        padding: .5rem .7rem;
+
+    }
+
+    header nav ul li:hover {
+        background-color: #005B41;
+        color: aliceblue;
+        padding: .5rem;
+        border-radius: 4px;
+    }
+
+    header nav ul li:hover a {
+        color: aliceblue;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header div li .icon {
+        display: block !important;
+        color: var(--lightgreen);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        transition:  all .3s ease-in-out;
+       
+    }
+
+    
+    header div li .icon:hover {
+        color: var(--darkgreen);
+        transform: scale(.9);
+    }
+
+    .show {
+        display: none !important;
+    }
+}
+
+/* Media Query Ended */
+
+header {
+    position: fixed;
+     top: 0;
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    background-color: snow;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+    z-index: 1;
+}
+
+header img {
+    max-width: 300px;
+    max-width: 140px;
+    margin-top: -40px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    color: var(--lightgreen);
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: .5rem .8rem;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+nav ul li a:hover {
+    color: var(--darkgreen);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+nav ul li a.active {
+    background-color: var(--darkgreen);
+    color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.514);
+}
+
+.icon {
+    display: none;
+}

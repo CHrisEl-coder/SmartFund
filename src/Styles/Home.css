@@ -1,0 +1,285 @@
+@media screen and (max-width: 600px) {
+
+    .main img {
+        right: -25% !important;
+        top: 37% !important;
+       
+    }
+
+    .main h1 {
+        font-size: 28px;
+        margin: 160px auto auto 20px !important;
+       
+    }
+
+    main section {
+        grid-template-columns: 1fr !important;
+    }
+
+    .testimonial {
+        max-width: 400px !important;
+    }
+   
+}
+
+
+/* Media Query End */
+
+
+/* Keyframes Start */
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main img {
+   position: absolute;
+     top: 25%;
+     right: 0;
+    z-index: -1;
+    
+
+}
+
+.main h1 {
+   margin: 280px auto auto 40px;
+   max-width: 800px;
+   direction: ltr;
+   line-height: 2;
+   word-spacing: 2px;
+   letter-spacing: 2px;
+   font-weight: 800;
+   font-family:'Poppins', sans-serif;
+   color: var(--teal);
+
+}
+
+.main h1 span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: var(--darkgreen);
+    
+}
+
+.link {
+    text-align: center;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.link a {
+    background-color: var(--darkgreen);
+    color: aliceblue;
+    padding: .6rem 2.5rem;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: none;
+    box-shadow: 2px 3px 10px rgba(31, 30, 30, 0.493);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.link a:hover {
+    background-color: transparent;
+    border: 2px solid var(--darkgreen);
+    color: var(--darkgreen);
+}
+
+/* First Component End */
+
+/* Styling The Accessibility Component */
+
+main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 1rem;
+}
+
+main section div {
+    display: inherit;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: rgb(209, 215, 219);
+    box-shadow: 0 3px 10px rgba(31, 30, 30, 0.493);
+
+
+}
+
+main section div h3 {
+    font-size: 22px;
+    border-bottom: 2px dotted var(--lightgreen);
+    padding: 1.5rem;
+}
+
+.access {
+    width: 100%;
+    height: 60px;
+    color: rgb(22, 2, 68);
+}
+
+.security {
+    color: var(--darkgreen);
+    width: 100%;
+    height: 60px;
+}
+
+
+.fast {
+    width: 100%;
+    height: 60px;
+    color: var(--lightgreen);
+    transform: rotate(40deg);
+}
+
+.chart {
+    width: 100%;
+    height: 60px;
+    color: var(--teal);
+}
+
+/* article styling */
+
+.article {
+    position: relative;
+    margin-top: 20px;
+    padding: .55rem;
+}
+
+.article h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid var(--teal);
+
+
+}
+
+.article .nuggets {
+
+    padding: 2rem;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(31, 30, 30, 0.493);
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.nuggets h4 {
+    padding: .8rem;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nuggets p {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top: 10px;
+    color: var(--teal);
+}
+
+.nuggets p:nth-child(2) {
+    color: var(--darkgreen);
+}
+
+.nuggets p:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    color: var(--lightgreen);
+   
+}
+
+.slider-controls {
+    position: absolute;
+       top: 78%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    animation: bounce 5s .1s infinite;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    color: var(--teal);
+}
+
+.arrow:hover {
+    background-color: aliceblue;
+    padding: .5rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 70% !important;
+}
+
+
+/* Article Styling End */
+
+/* Testimonial Styling */
+
+
+.testimonial-slider {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: -60px;
+
+}
+
+.testimonial {
+    position: relative;
+    background-color: var(--darkgreen);
+    border-radius: 6px;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem;
+    max-width: 500px;
+    
+           
+}
+
+.testimonial img {
+    position: absolute;
+     top: 0;
+     left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.testimonial-content {
+    line-height: 2.4;
+    direction: rtl;
+}
+
+.testimonial p {
+    margin-top: 15px;
+}
+
+
+

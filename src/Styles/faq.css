@@ -1,0 +1,75 @@
+.faq {
+    margin-top: 110px;
+    background-color: aliceblue;
+    
+}
+
+.fq-div {
+    background-color: var(--darkgreen);
+    padding: 2rem;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.faq div h1 {
+    margin: 30px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--teal);
+
+}
+
+a {
+    color: var(--lightgreen);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    opacity: .8;
+}
+.fp {
+    font-family: monospace;
+}
+
+.faq div p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.sub {
+    margin: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub ul {
+    margin-top: 15px;
+    font-family: monospace;
+}
+
+.sub ul li {
+    margin-bottom: 10px;
+}
+
+.sub ul strong {
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sp ul {
+    line-height: 1.8;
+    font-family: monospace;
+    font-size: 14px;
+    
+}
+
+.sp ul li strong {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.sp ul li {
+    margin-bottom: 15px;
+}

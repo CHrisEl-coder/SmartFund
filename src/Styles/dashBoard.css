@@ -1,0 +1,994 @@
+@media  screen and (min-width: 800px) {
+    /* User Info Design */
+
+
+    
+}
+
+.mainDiv {
+    display: grid;
+    grid-template-areas: 'sidebar main main main main main main main main main main user';
+    gap: 5px;
+}
+
+
+/* SideBar Stylingv */
+
+.sideBar-Container {
+    grid-area: sidebar;
+    background-color: var(--darkgreen);
+    margin-top: 100px;
+    padding: .7rem;
+
+}
+
+.sideBar-Content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+.sideBar-Content ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 1.2rem 0;
+}
+
+.sideBar-Content ul li {
+    padding: 1rem 0;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.sideBar-Content ul li:hover {
+    padding-left: .6rem;
+    border-bottom: 4px solid aliceblue;
+}
+
+.sideBar-Button {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.sideBar-Button button {
+    padding: .45rem;
+    background-color: aliceblue;
+    color: var(--teal);
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    transition: all .6s ease-in-out;
+
+}
+
+.sideBar-Button button:hover {
+    border: 2px solid aliceblue;
+    transform: scale(.9);
+    background-color: transparent;
+}
+
+
+.sideIcons {
+    width: 27px;
+    height: 27px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.sideIcons:hover {
+    transform: scale(.8);
+}
+
+.bar {
+    height: 27px;
+    width: 27px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.bar:hover {
+    transform: scale(.8);
+}
+
+.cancel {
+    height: 27px;
+    width: 27px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.cancel:hover {
+    transform: scale(.8);
+}
+/* SideBar Styling End */
+
+
+
+
+/* User Info Tab Styles */
+
+.User-Container {
+    grid-area: user;
+    margin-top: 100px;
+    background: aliceblue;
+    box-shadow: 2px 4px 8px rgba(24, 23, 23, 0.5);
+    padding: 0 .6rem;
+    
+}
+
+.userContainer {
+    grid-area: user;
+    margin-top: 100px;
+    background-color: aliceblue;
+    box-shadow: 2px 4px 8px rgba(24, 23, 23, 0.5);
+    padding: .6rem;
+    overflow: hidden;
+    
+}
+
+.arrBtn {
+    height: 23px;
+    color: var(--darkgreen);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.arrBtn:hover {
+    transform: translateX(10px);
+}
+
+.userContainer .User-Info {
+    display: none;
+}
+
+.userContainer .User-Content {
+    display: none;
+}
+.User-Container .User-Info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: .7rem;
+    width: 100%;
+}
+
+.User-Container .userIdentity .user-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--darkgreen);
+    float: center;
+}
+
+.User-Container .userIdentity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -30px;
+}
+
+.User-Container .userIdentity span {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--teal);
+    overflow: hidden;
+}
+
+.User-Info h4 {
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 800;
+    line-height: 1.8;
+
+}
+
+.User-Content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+}
+
+.capital {
+    position: relative;
+    background-color: var(--darkgreen);
+    padding: 2.2rem .8rem;
+    box-shadow: 0 2px 8px rgba(7, 7, 7, 0.5);
+    border-radius: 8px;
+
+}
+
+.capital p {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.capital span {
+    position: absolute;
+      bottom: 7%;
+      right: 6%;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.earning {
+    position: relative;
+    background-color: snow;
+    padding: 2.5rem .8rem;
+    box-shadow: 0 2px 8px rgba(7, 7, 7, 0.5);
+    border-radius: 8px;
+}
+
+.earning span {
+  position: absolute;
+    bottom: 7%;
+    right: 6%;
+  color: var(--darkgreen);
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.earning p {
+    color: var(--darkgreen);
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.subInfo {
+    padding: 1.5rem;
+    background-color: rgba(194, 177, 177, 0.356);
+    line-height: 2.5;
+}
+
+.subInfo p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: 800;
+    color: var(--teal);
+}
+
+
+.userButton {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem;
+}
+
+.userButton button {
+    border:  none;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: var(--lightgreen);
+    padding: .5rem;
+    cursor: pointer;
+    color: aliceblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    transition: all .6s ease-in-out;
+}
+
+.userButton button:last-child {
+    background-color: aliceblue;
+    color: var(--darkgreen);
+    
+}
+
+.userButton button:hover {
+    background-color: aliceblue;
+    color: var(--darkgreen);
+    transform: scale(.8);
+}
+/* User Info Tab Styles End */
+
+
+/* Package Plan Design */
+.basic, .regular, .classic, .prof, .adv, .prem {
+    grid-area: main;
+    margin-top: 105px;
+    padding: 1rem;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+    text-align: center;
+    
+
+}
+
+.basic .firstDiv {
+    background-color: var(--lightgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;}
+
+.basic .firstDiv h1 {
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.basic .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
+}
+
+.basic main {
+    margin-top: 50px;
+    border: 2px solid rgb(190, 204, 216);
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.basic main h4 {
+    text-align: center;
+    color: var(--darkgreen);
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid var(--teal);
+}
+
+.basic main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: aliceblue;
+    padding: 1rem .6rem;
+}
+
+.basic main div p {
+    background-color: rgba(142, 204, 245, 0.466);
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(194, 177, 177, 0.356);
+}
+
+.basic main div p:nth-child(2) {
+    background-color: rgba(128, 128, 128, 0.301);
+}
+
+
+.classic .firstDiv {
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;}
+
+.classic .firstDiv h1 {
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.classic .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
+}
+
+.classic main {
+    margin-top: 50px;
+    border: 2px solid rgba(139, 69, 19, 0.671);
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.classic main h4 {
+    text-align: center;
+    color: saddlebrown;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid var(--teal);
+}
+
+.classic main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(139, 69, 19, 0.5);
+    padding: 1rem .6rem;
+}
+
+.classic main div p {
+    background-color: snow;
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.356);
+}
+
+.classic main div p:nth-child(2) {
+    background-color: rgba(216, 216, 216, 0.37);
+}
+
+
+.regular .firstDiv {
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;}
+
+.regular .firstDiv h1 {
+    color: var(--teal);
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.regular .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: var(--teal);
+}
+
+.regular main {
+    margin-top: 50px;
+    border: 2px solid silver;
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.regular main h4 {
+    text-align: center;
+    color: var(--teal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid silver;
+}
+
+.regular main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: silver;
+    padding: 1rem .6rem;
+}
+
+.regular main div p {
+    background-color: var(--teal);
+    color: silver;
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(194, 177, 177, 0.356);
+}
+
+.regular main div p:nth-child(2) {
+    background-color: rgba(128, 128, 128, 0.301);
+    color: var(--teal);
+}
+
+
+.prof .firstDiv {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;}
+
+.prof .firstDiv h1 {
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.prof .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
+}
+
+.prof main {
+    margin-top: 50px;
+    border: 2px solid rgba(197, 146, 15, 0.87);
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.prof main h4 {
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid var(--teal);
+}
+
+.prof main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: goldenrod;
+    padding: 1rem .6rem;
+}
+
+.prof main div p {
+    background-color: rgba(247, 247, 247, 0.466);
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(247, 247, 247, 0.664);
+}
+
+.prof main div p:nth-child(2) {
+    background-color: rgba(238, 235, 235, 0.507);
+}  
+
+
+.adv .firstDiv {
+    background-color: rgb(179, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;}
+
+.adv .firstDiv h1 {
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.adv .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
+}
+
+.adv main {
+    margin-top: 50px;
+    border: 2px solid rgba(179, 5, 5, 0.425);
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.adv main h4 {
+    text-align: center;
+    color: rgb(179, 5, 5);
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid var(--teal);
+}
+
+.adv main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(179, 5, 5);
+    padding: 1rem .6rem;
+}
+
+.adv main div p {
+    background-color: snow;
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(194, 177, 177, 0.356);
+}
+
+.adv main div p:nth-child(2) {
+    background-color: rgba(255, 250, 250, 0.603);
+}
+
+
+
+
+
+.prem .firstDiv {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;
+    box-shadow: 0 2px 8px rgba(194, 177, 177, 0.356);
+}
+     
+
+.prem .firstDiv h1 {
+    color: var(--teal);
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+   
+
+}
+
+.prem .firstDiv .icn {
+    height: 30px;
+    width: 30px;
+    color: var(--teal);
+}
+
+.prem main {
+    margin-top: 50px;
+    border: 2px solid var(--teal);
+    border-radius: 8px;
+    padding: 1rem .7rem;
+}
+
+.prem main h4 {
+    text-align: center;
+    color: var(--teal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    border-bottom: 2px solid var(--teal);
+}
+
+.prem main div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: aliceblue;
+    padding: 1rem .6rem;
+}
+
+.prem main div p {
+    background-color: var(--teal);
+    padding: .55rem;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    color: aliceblue;
+    box-shadow: 0 2px 8px rgba(194, 177, 177, 0.356);
+}
+
+.prem main div p:nth-child(2) {
+    background-color: rgba(255, 250, 250, 0.603);
+    color: var(--teal);
+}
+
+
+
+.invest {
+    margin-top: 20px;
+    padding: .6rem;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: var(--teal);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+.invest:hover {
+    background-color: transparent;
+    color: var(--teal);
+    box-shadow: 0 2px 8px rgba(12, 12, 12, 0.61);
+}
+
+.plan-controls {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan-controls .arr {
+    height: 27px;
+    width: 27px;
+    font-weight: bolder;
+    color: var(--lightgreen);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.plan-controls .arr:hover {
+    transform: scale(.8);
+}
+/* Package Plan Design End */
+
+/* Styling the popup deposit tab */
+.fundModal {
+    background-color: rgb(238, 230, 230);
+    padding: 2rem 5rem;
+}
+
+.fund {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.starter {
+    padding: .5rem;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    font-family: monospace;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+}
+
+form input {
+    padding: .45rem;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.symbol {
+    font-weight: bold;
+}
+
+.dep {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: var(--darkgreen);
+    transition: all .4s ease-in-out;
+}
+
+.dep:hover {
+    background-color: var(--darkgreen);
+    color: snow;
+    transform: scale(.9);
+
+}
+/* styling deposit popup end */
+
+
+
+/* Styling the succcess tab */
+
+.sucess {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.succIcon {
+    width: 33px;
+    height: 33px;
+    color: darkolivegreen;
+}
+
+.receipt {
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1rem;
+    
+}
+
+.receipt p {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Styling the success tab end */
+
+
+/* styling the loader hook */
+
+.loader div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader div p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 4px;
+    
+}
+
+/* styling loader hook end */
+
+
+/* styling withdrawal tab */ 
+
+.withdrawModal {
+    position: relative;
+}
+
+
+
+.initial {
+    background-color: rgb(169, 169, 169);
+    padding: 1rem 3rem;
+    border-radius: 8px;
+
+
+}
+
+.initial form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.initial form label {
+    margin-bottom : -30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.initial form input {
+    padding: .7rem;
+    border-radius: 6px;
+    outline: none;
+    font-weight: bold;
+}
+
+#withdraw {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#withdraw:hover {
+    background-color: var(--darkgreen);
+    color: snow;
+    transform: scale(.9);
+
+}
+
+.placed {
+    padding: 1.5rem 3rem;
+    background-color: rgb(204, 200, 200);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.marked {
+    height: 30px;
+    width: 30px;
+    color: var(--lightgreen);
+}
+
+.placed .firstP {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--teal);
+}
+
+.placed main div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+ .canc {
+    position: absolute;
+      left: 90%;
+      top: 0;
+    color: black;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+
+}
+
+.canc:hover {
+    transform: scale(.8);
+}
+
+
+
+
+

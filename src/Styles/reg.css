@@ -1,0 +1,161 @@
+
+.form {
+    margin-top: 100px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-div {
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+    padding: 3rem;
+}
+
+.form div img {
+    width: 250px;
+    height: auto;
+    margin-top: -100px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.container form label {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 800;text-align: left;
+}
+
+.container form input {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    border-bottom: 2px dashed var(--darkgreen);
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.container form select {
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid var(--darkgreen);
+}
+
+.container form select option {
+    color: aliceblue;
+    background-color: var(--teal);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+.container form select option:hover {
+    background-color: aliceblue;
+    color: var(--teal);
+}
+
+.container form button {
+    padding: .6rem;
+    background-color: var(--lightgreen);
+    color: aliceblue;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+.container form button:hover {
+    transform: scale(.9);
+}
+
+/* Styling google auth button */
+
+.auth {
+    margin-top: 15px;
+}
+
+.auth button {
+    width: 100%;
+    padding: .55rem;
+    background-color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+
+}
+
+.auth button:hover {
+    transform: scale(.9);
+}
+
+.g-icon {
+    margin-bottom: -3px;
+    margin-right: 5px;
+    background-color: snow;
+    border-radius: 50%;
+}
+
+/* already have Account style */
+
+.hv-acc {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hv-acc a {
+    font-size: 11px;
+}
+
+
+
+/* The Verify Email Component Styling */
+
+.verify {
+    position: fixed;
+      top: 15%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: aliceblue;
+
+}
+
+.verify-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10rem 1rem;
+}
+
+.verify-container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.verify-container span {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
